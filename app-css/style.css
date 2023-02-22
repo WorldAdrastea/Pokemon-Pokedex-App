@@ -1,0 +1,27 @@
+/* 
+#0A285F - Dark blue
+#0075BE - Lighter Blue
+#D5A100 - Dark Yellow
+#FFCC00 - Bright Yellow
+
+*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFCC00;
+}
+
+div {
+    border: none;
+    border-radius: 50px;
+    background-color: #0075BE;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    border: 5px solid #0A285F;
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
