@@ -25,3 +25,18 @@ h1 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.pokedexStyle {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.pokemonButtonStyle {
+    border: none;
+    border-radius: 50px;
+    background-color: #D5A100;
+    color: #0075BE;
+    height: 50px;
+    width: 200px;
+    font-size: medium;
+}
