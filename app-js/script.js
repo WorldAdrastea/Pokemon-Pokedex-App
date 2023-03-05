@@ -18,17 +18,15 @@ let pokemonRepository = (function () {
     ];
 
     function add(pokemon) {
-        if (pokemon.typeof === Object && Object.keys(pokemon) === Object.keys(pokemonList) ? pokemonList.push(pokemon) : console.log("Wrong Data Type") );
+        if (typeof(pokemon) === "object" && Object.keys(pokemonList[0]).every((val, i, p) => val === p[i]) ? pokemonList.push(pokemon) : console.log("Wrong Data Type"));
     };
 
     function getAll() {
         return pokemonList;
     };
 
-    function find(pokemon) {
-        pokemonList.name.filter(pokemonList.name === pokemon.name); {
-            return pokemon.name;
-        };
+    function find(pokemonName) {
+       return pokemonList.filter(pokemon => pokemon.name === pokemonName);
     };
 
     return {
@@ -39,6 +37,7 @@ let pokemonRepository = (function () {
 })();
 
 pokemonRepository.getAll().forEach((pokemonList) => {
+    let pokemonUl = document.querySelector('.ul')
     document.write(pokemonList.name + " (Height: " + pokemonList.height + ") ");
     if (heightConditional = pokemonList.height >= 1.0 ? "- Wow that's big " : ""); {
         document.write(heightConditional);
