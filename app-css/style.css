@@ -5,19 +5,19 @@
 #FFCC00 - Bright Yellow
 
 */
-
+/* general body styling */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #FFCC00;
 }
-
+/* general div styling */
 div {
     border: none;
     border-radius: 50px;
     background-color: #0075BE;
     color: white;
 }
-
+/* general h1 styling */
 h1 {
     text-align: center;
     border: 5px solid #0A285F;
@@ -25,12 +25,13 @@ h1 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
+/* styles the ul for pokemon list */
 .pokedexStyle {
     list-style-type: none;
     margin-bottom: 10px;
 }
 
+/* styles the buttons of list of pokemon */
 .pokemonButtonStyle {
     border: none;
     border-radius: 50px;
@@ -40,3 +41,10 @@ h1 {
     width: 200px;
     font-size: medium;
 }
+
+button:hover, button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+  }
