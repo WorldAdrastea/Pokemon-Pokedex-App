@@ -39,7 +39,9 @@ let pokemonRepository = (function () {
         button.classList.add('pokemonButtonStyle');
         listItem.appendChild(button);
         pokemonUl.appendChild(listItem);
-        button.addEventListener('click', showDetails(pokemon));
+        button.addEventListener('click', function () {
+            showDetails(pokemon);
+        });
     };
     //function to show the details of pokemon (console log for now)
     function showDetails(pokemon) {
