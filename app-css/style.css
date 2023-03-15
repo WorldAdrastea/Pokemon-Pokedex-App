@@ -29,6 +29,8 @@ h1 {
 .pokedexStyle {
     list-style-type: none;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 /* styles the buttons of list of pokemon */
@@ -113,4 +115,7 @@ button:hover, button:focus {
     width: auto;
 }
   
+.nameStyle {
+    text-transform: capitalize;
+}
 

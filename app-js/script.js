@@ -53,18 +53,27 @@ let pokemonRepository = (function () {
       closeButtonElement.classList.add('modal-close');
       closeButtonElement.innerText = 'Close';
       closeButtonElement.addEventListener('click', hideModal);
-
-      let titleElement = document.createElement('h1')
+      
+      //Adds name of pokemon at top of modal
+      let titleElement = document.createElement('h1');
       titleElement.innerHTML = pokemon.name;
 
-      let pokemonImage = document.createElement('img')
+      //Adds animated gif sprite of pokemon
+      let pokemonImage = document.createElement('img');
       pokemonImage.src = pokemon.imageUrl;
 
-      let contentElement = document.createElement('p')
-      contentElement.innerText = 'Height: ' + pokemon.height + 'm';
+      //Adds name of pokemon inside the modal
+      let subName = document.createElement('p');
+      subName.classList.add('nameStyle');
+      subName.innerHTML = 'Name: ' + pokemon.name;
+
+      //Adds height details of pokemon
+      let contentElement = document.createElement('p');
+      contentElement.innerText = 'Height: ' + pokemon.height / 10 + 'm';
 
       modal.appendChild(closeButtonElement);
       modal.appendChild(titleElement);
+      modal.appendChild(subName);
       modal.appendChild(contentElement);
       modal.appendChild(pokemonImage);
       modalContainer.appendChild(modal);
@@ -121,7 +130,7 @@ let pokemonRepository = (function () {
           return response.json();
         }).then(function (details) {
           // Now we add the details to the item
-          item.imageUrl = details.sprites.front_default;
+          item.imageUrl = details.sprites.versions['generation-v']['black-white'].animated.front_default;
           item.height = details.height;
           item.types = details.types;
         }).catch(function (e) {
