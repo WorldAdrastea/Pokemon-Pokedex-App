@@ -20,7 +20,12 @@ let pokemonRepository = (function () {
         let pokemonUl = document.querySelector('ul');
         let listItem = document.createElement('li');
         listItem.classList.add('pokedexStyle');
+        listItem.classList.add('list-group-item');
         let button = document.createElement('button');
+        listItem.classList.add('btn');
+        listItem.classList.add('btn-primary');
+        $('.btn').data('toggle', 'modal');
+        $('.btn').data('target', '#modal-container');
         button.innerText = pokemon.name;
         button.setAttribute('id', 'modal')
         button.classList.add('pokemonButtonStyle');

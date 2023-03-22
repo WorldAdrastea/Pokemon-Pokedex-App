@@ -31,6 +31,7 @@ h1 {
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
+    background-color: #D5A100
 }
 
 /* styles the buttons of list of pokemon */
@@ -58,7 +59,7 @@ button:hover, button:focus {
 }
 
 #modal-container.is-visible {
-    position: fixed;
+    position: sticky;
     padding: 20px;
     box-sizing: border-box;
     top: 0;
@@ -76,7 +77,8 @@ button:hover, button:focus {
 }
 
 .modal {
-    margin: auto;
+    margin:auto;
+    position: relative;
     display: inline-block;
     box-sizing: border-box;
     background: #D5A100;
