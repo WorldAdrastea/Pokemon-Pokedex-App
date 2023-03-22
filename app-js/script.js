@@ -22,24 +22,25 @@ let pokemonRepository = (function () {
         listItem.classList.add('pokedexStyle');
         listItem.classList.add('list-group-item');
         let button = document.createElement('button');
-        listItem.classList.add('btn');
-        listItem.classList.add('btn-primary');
-        $('.btn').data('toggle', 'modal');
-        $('.btn').data('target', '#modal-container');
+        button.classList.add('btn');
+        button.classList.add('btn-primary');
+        button.setAttribute('data-toggle', 'modal');
+        button.setAttribute('data-target', '#modal-container');
         button.innerText = pokemon.name;
-        button.setAttribute('id', 'modal')
+        button.setAttribute('id', 'modal');
         button.classList.add('pokemonButtonStyle');
         listItem.appendChild(button);
         pokemonUl.appendChild(listItem);
+        //Adds the pokemon details in when the button is clicked
         button.addEventListener('click', function () {
             showDetails(pokemon);
-            showModal(pokemon);
         });
     };
+
     //function to show the details of pokemon (console log for now)
     function showDetails(pokemon) {
         loadDetails(pokemon).then(function () {
-          showModal(pokemon)
+          showModal(pokemon);
         });
     };
 
