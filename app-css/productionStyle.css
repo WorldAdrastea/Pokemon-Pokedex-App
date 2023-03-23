@@ -1,0 +1,87 @@
+/* 
+Colour Palette
+#0A285F - Dark blue
+#0075BE - Lighter Blue
+#D5A100 - Dark Yellow
+#FFCC00 - Bright Yellow
+
+*/
+/* general body styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFCC00;
+}
+
+header {
+    background-color: #0A285F;
+    position: absolute
+}
+
+main {
+    margin: 100px;
+}
+.navbar-brand {
+    color: #D5A100;
+}
+
+.list-group {
+    background-color: none;
+}
+/* styles the ul for pokemon list */
+.pokedexStyle {
+    list-style-type: none;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #0075BE
+}
+
+/* styles the buttons of list of pokemon */
+.pokemonButtonStyle {
+    border: none;
+    border-radius: 50px;
+    background-color: #D5A100;
+    color: #0075BE;
+    height: 50px;
+    width: 200px;
+    font-size: medium;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover, button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+  }
+
+#modal-container {
+    display: none;
+}
+
+.modal-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+  
+.modal p {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+.modal img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+  
+.nameStyle {
+    text-transform: capitalize;
+}
