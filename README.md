@@ -1,2 +1,2 @@
 # Pokemon Pokedex App
- A pokemon pokedex and display details of pokemon
+This is a Pokedex app that displays all 151 Pokemon from Generation 1. You can click the name of a pokemon to display their information.
