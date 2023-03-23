@@ -8,28 +8,37 @@
     <link rel="stylesheet" type="text/css" href="app-css/style.css">
   </head>
   <body>
-    <div>
-      <h1> Welcome to the Generation 1 Pokedex </h1>
-    </div>
+    <header class="fixed-top">
+      <nav class="navbar">
+        <a class="navbar-brand" href="index.html"> Welcome to the Generation 1 Pokedex</a>
+      </nav>
+    </header>
     <!-- Adds the list of pokemon below-->
     <!-- Start of Modal-->
-    <div class="modal fade" tabindex="-1" role="dialog" id="modal-container">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <!-- End of modal header -->
-          <div id="image-container"></div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <main>
+        <ul class="pokemon-list list-group" id="show-modal"></ul>
+        <div class="modal fade" tabindex="-1" role="dialog" id="modal-container" aria-labelledby="modal-label" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+               <h5 class="modal-title" id="modal-label"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <ul class="pokemon-list list-group" id="show-modal"></ul>
+      <!-- End of modal header -->
+    </main>
+    <footer>
+    </footer>
     <!-- Add the script tag to link to js file-->
     <script src="app-js/script.js"></script>
     <script src="app-js/polyfill.min.js"></script>
