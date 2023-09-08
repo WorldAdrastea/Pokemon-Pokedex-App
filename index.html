@@ -11,12 +11,14 @@
     <header class="fixed-top">
       <nav class="navbar">
         <a class="navbar-brand" href="index.html"> Welcome to the Generation 1 Pokedex</a>
+        <input type="text" id="pokemonSearch" onkeyup="pokemonRepository.searchBar()" placeholder="Search Pokemon...">
+        <div id="searchResult"></div>
       </nav>
     </header>
     <!-- Adds the list of pokemon below-->
     <!-- Start of Modal-->
     <main>
-        <ul class="pokemon-list list-group" id="show-modal"></ul>
+        <ul class="pokemon-list list-group" id="show-modal pokemon-list"></ul>
         <div class="modal fade" tabindex="-1" role="dialog" id="modal-container" aria-labelledby="modal-label" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
